@@ -22,10 +22,19 @@ With the skeletons of each worm, I find the endpoints and calculate the line bet
 
 Then, based on the length of the worm, a rectangle of proportionate width to the worm's length is calculated along the line between the endpoints. The worm is then cropped along that rectangle. To get an idea of the difference between a dead or alive worm's rectangle, here is the rectangle of the worm above (on the left) next to the rectangle of a dead worm (on the right) to compare:
 <br>
-<img width="61" alt="Screenshot 2023-12-11 at 3 47 36 PM" src="https://github.com/madelinesimpson/CElegan-Classification/assets/91549090/ddf0a379-8edd-49c2-a13c-ac7fc8dd819e">
+<style>
+  div {
+    padding-left = 10px;
+    padding-right = 10px;
+  }
+</style>
+<div>
+<img width="58" alt="Screenshot 2023-12-11 at 3 47 36 PM" src="https://github.com/madelinesimpson/CElegan-Classification/assets/91549090/ddf0a379-8edd-49c2-a13c-ac7fc8dd819e">
 <img width="50" alt="Screenshot 2023-12-11 at 3 47 45 PM" src="https://github.com/madelinesimpson/CElegan-Classification/assets/91549090/462b6c97-75d8-422d-abbc-389c252380b8">
+</div>
 
 The rectangles are then inputted into a very simple Convolutional Neural Network with two layers, each consisting of one Conv2D and one MaxPool2D, followed by a Flatten, Dropout, and Dense layer.
+<br>
 The model classified worms as dead or alive with an accuracy of 0.9393939375.
 The image returned has green contours over alive worms, red over dead worms, and yellow over clusters.
 <br>
