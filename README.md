@@ -28,8 +28,14 @@ Then, based on the length of the worm, a rectangle of proportionate width to the
 The rectangles are then inputted into a very simple Convolutional Neural Network with two layers, each consisting of one Conv2D and one MaxPool2D, followed by a Flatten, Dropout, and Dense layer.
 <br>
 The model classified worms as dead or alive with an accuracy of 0.9393939375.
+<br>
 The image returned has green contours over alive worms, red over dead worms, and yellow over clusters.
 <br>
 <img width="471" alt="Screenshot 2023-12-11 at 3 57 54 PM" src="https://github.com/madelinesimpson/CElegan-Classification/assets/91549090/1412740b-d129-4727-8dce-64033dc81be7">
 
 As you can see, the model identified worms in the image as dead, alive, or a cluster accureately (aside from the worm in a circle).
+
+In terms of clusters, an attempt to resolve them is being made through the implementation of the methods described in this research article:
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3048333/.
+
+The current code can be found in the cluster resolution folder.
