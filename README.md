@@ -5,15 +5,15 @@ This repository aims to tackle the problem of classifying C. Elegans as dead or 
 The individual worm classification folder contains code which classifies worms in an image as dead, alive, or in a cluster, returning a count of the worms and clusters in the image as well.
 
 Starting image:
-<img width="663" alt="Screenshot 2023-12-11 at 3 24 36 PM" src="https://github.com/madelinesimpson/CElegan-Classification/assets/91549090/34b82a72-1b30-49d9-8bde-da3523da1bbf">
+<img width="500" alt="Screenshot 2023-12-11 at 3 24 36 PM" src="https://github.com/madelinesimpson/CElegan-Classification/assets/91549090/34b82a72-1b30-49d9-8bde-da3523da1bbf">
 
 In order to do so, the image is first undergoes a series of thresholding techniques to achieve a binarized image in which worms are white (1) and the background is black (0).
 
-<img width="492" alt="Screenshot 2023-12-11 at 3 24 00 PM" src="https://github.com/madelinesimpson/CElegan-Classification/assets/91549090/1f97f44d-b027-4620-a120-5d654d49ac3e">
+<img width="500" alt="Screenshot 2023-12-11 at 3 24 00 PM" src="https://github.com/madelinesimpson/CElegan-Classification/assets/91549090/1f97f44d-b027-4620-a120-5d654d49ac3e">
 
 Then, I utilize the Zhang Suen Thinning algorithm: https://github.com/linbojin/Skeletonization-by-Zhang-Suen-Thinning-Algorithm in order to obtain skeletons of worms in the image.
 
-<img width="340" alt="Screenshot 2023-12-11 at 3 30 22 PM" src="https://github.com/madelinesimpson/CElegan-Classification/assets/91549090/46bd5684-110d-46d7-b090-607e2b2e427f">
+<img width="500" alt="Screenshot 2023-12-11 at 3 30 22 PM" src="https://github.com/madelinesimpson/CElegan-Classification/assets/91549090/46bd5684-110d-46d7-b090-607e2b2e427f">
 
 With the skeletons of each worm, I find the endpoints and calculate the line between the two endpoints. This line is used as the axis for analyzing the worm.
 
