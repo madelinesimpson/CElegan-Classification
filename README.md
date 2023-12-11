@@ -24,8 +24,8 @@ Then, based on the length of the worm, a rectangle of proportionate width to the
 <br>
 <style>
   div {
-    padding-left = 10px;
-    padding-right = 10px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 </style>
 <div>
