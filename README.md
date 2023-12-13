@@ -6,6 +6,7 @@ The individual worm classification folder contains code which classifies worms i
 
 In order to do so, the image first undergoes a series of thresholding techniques to create a binarized image in which worms are white (1) and the background is black (0).
 <br>
+
 Starting image: 
 <br>
 <img width="500" alt="Screenshot 2023-12-11 at 3 24 36 PM" src="https://github.com/madelinesimpson/CElegan-Classification/assets/91549090/34b82a72-1b30-49d9-8bde-da3523da1bbf">
