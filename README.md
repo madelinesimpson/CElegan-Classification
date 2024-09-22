@@ -36,7 +36,7 @@ The image returned has green contours over alive worms, red over dead worms, and
 <br>
 <img width="471" alt="Screenshot 2023-12-11 at 3 57 54 PM" src="https://github.com/madelinesimpson/CElegan-Classification/assets/91549090/1412740b-d129-4727-8dce-64033dc81be7">
 
-As you can see, the model identified worms in the image as dead, alive, or a cluster accureately (aside from the worm in a circle).
+As you can see, the model identified worms in the image as dead, alive, or a cluster accurately (aside from the worm in a circle).
 
 In terms of clusters, an attempt to resolve them is being made through the implementation of the methods described in this research article:
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3048333/.
